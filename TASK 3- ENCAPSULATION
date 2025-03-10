@@ -1,0 +1,35 @@
+class Employee
+{
+    private String id;
+    private int salary;
+    public void display(String id)
+    {
+        System.out.println("ID: "+id);
+    }
+    
+    public void setsalary(int mysalary)
+    {
+        if(mysalary>=10000){
+            System.out.println("Excess amount of Salaryy,try again!!!");
+        }
+        else
+        {
+           this.salary=mysalary;
+           System.out.println("Salary :"+mysalary);
+        }
+    }
+    public int getsalary()
+    {
+        return salary;
+    }
+    
+    public static void main(String[] args)
+    {
+        Employee a=new Employee();
+        a.display("RagapriyaGunasekaran");
+        a.setsalary(11000);
+        System.out.println("Current salary: "+a.getsalary());
+        
+    }
+    
+}
