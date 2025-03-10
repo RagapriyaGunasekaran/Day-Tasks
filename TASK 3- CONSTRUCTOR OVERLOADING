@@ -1,0 +1,23 @@
+class Book
+{
+    String title="The Taxi Driver";
+    String author="ks Duggal";
+    public Book()
+    {
+        System.out.println("Title: "+title);
+        System.out.println("author: "+author);
+    }
+     public Book(String mytitle,String myauthor)
+     {
+         this.title=mytitle;
+         this.author=myauthor;
+         System.out.println("Title: "+mytitle);
+        System.out.println("author: "+myauthor);
+    }
+    public static void main(String[] args)
+    {
+        Book a=new Book();
+        Book b=new Book("A Retrived Information","O.henry");
+        Book c=new Book("Kabuliwala","Rabindranath Tagore");
+    }
+     }
