@@ -1,0 +1,26 @@
+class Battery 
+{
+  void capacity()
+  {
+    System.out.println("Battery has the capacity ....");
+  }
+}
+class Mobile
+{
+  Battery b;
+  Mobile()
+  {
+    b=new Battery();
+  }
+  void capacity()
+  {
+    b.capacity();
+    System.out.println("Mobile has the capacity.....");
+  }
+}
+class Composition{
+  public static void main (String[] args) {
+    Mobile m=new Mobile();
+    m.capacity();
+  }
+}
